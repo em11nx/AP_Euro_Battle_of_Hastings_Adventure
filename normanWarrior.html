@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <title>The Battle of Hastings</title>
+</head>
+<body>
+    <div id="original" style="text-align: center;">
+        <h1>You are now a soldier for the Norman army in The Battle of Hastings</h1>
+        <h2 style="padding-top: 20px;">You are one of the cavalry in the running up towards the English</h2>
+        <p style="padding-top: 10px; font-size: larger;">The cavalry in front of you start to turn around <br> What do you do?</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt1').style.display = 'block'; document.getElementById('original').style.display = 'none'">Turn around with them</button>
+        <div style="padding: 10px;"></div>
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt2').style.display = 'block'; document.getElementById('original').style.display = 'none'">Go farther then turn around</button>
+    </div>
+
+    <div id="opt1" style="display: none; text-align: center;">
+        <h1>You turn around with them spears flying and people running after you</h1>
+        <h2 style="padding-top: 20px;">As you ride away your archers send volleys of arrows</h2>
+        <p style="padding-top: 10px; font-size: larger;">Others start to turn around <br> What do you do?</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt3').style.display = 'block'; document.getElementById('opt1').style.display = 'none';">Stay in the back</button>
+        <div style="padding: 10px;"></div>
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt4').style.display = 'block'; document.getElementById('opt1').style.display = 'none';">Turn back around</button>
+    </div>
+
+    <div id="opt2" style="display: none; text-align: center;">
+        <h1>You continue riding</h1>
+        <h2 style="padding-top: 20px;">As you start to turn around you feel an spear impale you</h2>
+        <p style="padding-top: 10px; font-size: larger;">You can always try again</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);">
+            <a style="text-decoration: none;" href="theStartOfTheFighting.html">Try again</a>
+        </button>
+    </div>
+
+    <div id="opt3" style="display: none; text-align: center;">
+        <h1>You stay in the back</h1>
+        <h2 style="padding-top: 20px;">Your side continues fighting</h2>
+        <p style="padding-top: 10px; font-size: larger;">After all the fighting is done your side has won</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);">
+            <a style="text-decoration: none;" href="ending.html">After the fight</a>
+        </button>
+    </div>
+
+    <div id="opt4" style="display: none; text-align: center;">
+        <h1>You ride back forward</h1>
+        <h2 style="padding-top: 20px;">As you ride just ready your lance impaling a English warrior</h2>
+        <p style="padding-top: 10px; font-size: larger;">After all the fighting is done your side has won</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);">
+            <a style="text-decoration: none;" href="ending.html">After the fight</a>
+        </button>    
+    </div>
+
+</body>
