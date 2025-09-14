@@ -3,21 +3,102 @@
     <title>The Battle of Hastings</title>
 </head>
 <body>
-    <div class="orginal shield formation" style="text-align: center;">
-        <h1 >You are now a soldier for the English army in The Battle of Hastings</h1>
+    <div id="original-shield-formation" style="text-align: center;">
+        <h1>You are now a soldier for the English army in The Battle of Hastings</h1>
         <h2 style="padding-top: 20px;">You are one of the warriors in the back of the shield formation</h2>
         <p style="padding-top: 10px; font-size: larger;">You hear your commander yell to "CHARGE!" <br> As you look up you see the enemy retreating. <br> What do you do?</p>
 
-        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById(':3').style.display = 'none';">Charge with your regiment</button>
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt1').style.display = 'block'; document.getElementById('original-shield-formation').style.display = 'none'">Charge in the front with your regiment into the enemy</button>
         <div style="padding: 10px;"></div>
-        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById(':3').style.display = 'none';">Stay father behind with your shield ready</button>
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt2').style.display = 'block'; document.getElementById('original-shield-formation').style.display = 'none'">Stay in the middle of your regiment with your shield ready</button>
     </div>
 
-    <div id="opt1">
-        <p>:3</p>
+    <div id="opt1" style="display: none; text-align: center;">
+        <h1>As you run up arrows start to fall from the sky</h1>
+        <h2 style="padding-top: 20px;">You look up at just the wrong time to see an arrow fall on your head</h2>
+        <p style="padding-top: 10px; font-size: larger;">You can always try again</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);">
+            <a style="text-decoration: none;" href="theStartOfTheFighting.html">Try again</a>
+        </button>
     </div>
 
-    <div id="opt2">
-        <p></p>
+    <div id="opt2" style="display: none; text-align: center;">
+        <h1>As you slowly approach arrows start to fall from the sky</h1>
+        <h2 style="padding-top: 20px;">Since you are not in the front you have time to raise your shield and block multiple arrows</h2>
+        <p style="padding-top: 10px; font-size: larger;">As you hold your shield to the sky you hear horses approaches <br> What do you do?</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt9').style.display = 'block'; document.getElementById('opt2').style.display = 'none';">Bring down your shield to block in front of you</button>
+        <div style="padding: 10px;"></div>
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt3').style.display = 'block'; document.getElementById('opt2').style.display = 'none';">Look ahead while keeping your shield above you.</button>
     </div>
-</body>
+
+    <div id="opt3" style="display: none; text-align: center;">
+        <h1>You look down to see a lance heading straight for you.</h1>
+        <h2 style="padding-top: 20px;">You have your shield up and your sword in the other hand</h2>
+        <p style="padding-top: 10px; font-size: larger;">What do you do?</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt4').style.display = 'block'; document.getElementById('opt3').style.display = 'none';">Attempt to block the attack with your shield</button>
+        <div style="padding: 10px;"></div>
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="if(Math.floor(Math.random() * (Math.floor(20) - Math.ceil(1) + 1)) + Math.ceil(1) == 1) {document.getElementById('opt6').style.display = 'block'; document.getElementById('opt3').style.display = 'none'; } else {document.getElementById('opt5').style.display = 'block'; document.getElementById('opt3').style.display = 'none'; }">Attempt to parry the attack with your sword</button>
+    </div>
+
+    <div id="opt4" style="display: none; text-align: center;">
+        <h1>As you try to bring down your shield the lance slides right under it</h1>
+        <h2 style="padding-top: 20px;">You look down to see the lance impale you</h2>
+        <p style="padding-top: 10px; font-size: larger;">You can always try again</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);">
+            <a style="text-decoration: none;" href="theStartOfTheFighting.html">Try again</a>
+        </button>
+    </div>
+
+   <div id="opt5" style="display: none; text-align: center;">
+        <h1>You bring up your sword after the lance has already stabbed you</h1>
+        <h2 style="padding-top: 20px;">You look down to see the lance impaled into you</h2>
+        <p style="padding-top: 10px; font-size: larger;">You can always try again</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);">
+            <a style="text-decoration: none;" href="theStartOfTheFighting.html">Try again</a>
+        </button>
+    </div>
+
+    <div id="opt6" style="display: none; text-align: center;">
+        <h1>You bring up your sword and deflect the lance</h1>
+        <h2 style="padding-top: 20px;">You look around to see the rest of your army died or retreating</h2>
+        <p style="padding-top: 10px; font-size: larger;">What will you do?</p>
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt7').style.display = 'block'; document.getElementById('opt6').style.display = 'none';">Run with them</button>
+        <div style="padding: 10px;"></div>
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt8').style.display = 'block'; document.getElementById('opt6').style.display = 'none';">Accept defeat</button>
+    </div>
+
+    <div id="opt7" style="display: none; text-align: center;">
+        <h1>You start running away</h1>
+        <h2 style="padding-top: 20px;">You look behind you and see as an arrow impales your chest</h2>
+        <p style="padding-top: 10px; font-size: larger;">You can always try again</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);">
+            <a style="text-decoration: none;" href="theStartOfTheFighting.html">Try again</a>
+        </button>
+    </div>
+
+    <div id="opt8" style="display: none; text-align: center;">
+        <h1>You knee down and surrender</h1>
+        <h2 style="padding-top: 20px;">You after the battle you were imprisoned until your death</h2>
+        <p style="padding-top: 10px; font-size: larger;">This is the best ending for someone who was in the front line</p>
+
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);">
+            <a style="text-decoration: none;" href="ending.html">Try again</a>
+        </button>
+    </div>
+
+    <div id="opt9" style="display: none; text-align: center;">
+        <h1>You block the lance with your shield</h1>
+        <h2 style="padding-top: 20px;">You look around to see the rest of your army died or retreating</h2>
+        <p style="padding-top: 10px; font-size: larger;">What will you do?</p>
+        
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt7').style.display = 'block'; document.getElementById('opt9').style.display = 'none';">Run with them</button>
+        <div style="padding: 10px;"></div>
+        <button style="margin: 0 auto; display:block; text-align: center; font-size: large; background-color: rgb(127, 199, 55);" onclick="document.getElementById('opt8').style.display = 'block'; document.getElementById('opt9').style.display = 'none';">Accept defeat</button>
+    </div>
+</body> 
